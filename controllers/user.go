@@ -5,7 +5,7 @@ import (
 	"regexp"
 )
 
-type userController struct{
+type userController struct {
 	userIDPattern *regexp.Regexp
 }
 
