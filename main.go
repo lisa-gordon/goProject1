@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+
+	"github.com/pluralsight/webservice/controllers"
+	"github.com/pluralsight/webservice/models"
+)
 
 func main() {
-	fmt.Println("Hello Bananas")
+	controllers.RegisterControllers()
+	http.ListenAndServe(":3000", )
 }
